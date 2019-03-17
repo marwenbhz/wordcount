@@ -8,11 +8,11 @@ import requests
 def wordcount(request, format=None):
     try:
         url = request.data['url']
-    except:
+    except Exception:
         return Response("No url in input!")
     try:
         word = request.data['word']
-    except:
+    except Exception:
         return Response("No word in input!")
     try:
         r = requests.get(url)
@@ -22,5 +22,5 @@ def wordcount(request, format=None):
                 {"status": r.status_code, "count": count})                
         else:
             return Response({"status": r.status_code, "message": "Error in url"})
-    except:
-        pass   
+    except Exception:
+        return {"message": "error in url to fetch !"}
