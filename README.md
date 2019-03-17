@@ -19,5 +19,3 @@ Post: { "word": "fit", "url": "https://www.virtusize.jp/"}
 ![alt text](https://image.noelshack.com/fichiers/2019/11/7/1552852584-screen5.png)
 ## Result
 {"status": 200,"count": 5}
-## Quality of code
-pylint filename: Your code has been rated at /10
