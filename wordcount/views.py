@@ -32,8 +32,4 @@ def wordcount(request, format=None):
         else:
             return Response({"status": r.status_code, "message": "Error in url"})
     except:
-        pass
-
-    # Create a JSON POST request
-    factory = APIRequestFactory()
-    request = factory.post('/wordcount/', {'url': 'https://www.virtusize.jp/', 'word': 'fit'}, format='json')    
+        pass   
