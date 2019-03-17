@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run the crawler when the container launches.
-CMD [ "python manage.py runserver" ] 
+CMD [ "python3 manage.py runserver" ] 
